@@ -1,6 +1,7 @@
 #!/bin/sh
 
-# Run this script by sourcing it: . ./init.sh py
+# First put the problem url in your clipboard,
+# then run this script by sourcing it: . ./init.sh py
 
 domain="$(xsel -b | awk -F'/' '{print $3}')"
 if [[ $domain != "leetcode.com" ]]; then
